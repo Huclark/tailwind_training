@@ -1,2 +1,2 @@
-# tailwind_training
+# tailwind training
 Starting my journey on tailwind css
