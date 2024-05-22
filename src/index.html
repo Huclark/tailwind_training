@@ -3,11 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/output.css" rel="stylesheet" />
+    <link href="../dist/main.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-100">
-    <div class="p-">
-      <img src="./img/logo.svg" alt="Workcation Logo">
+  <body class="bg-gray-300">
+    <div class="grid bg-gray-100 lg:grid-cols-2">
+      <div class="max-w-md px-8 py-12 mx-auto sm:max-w-xl lg:px-12 lg:py-12 lg:max-w-full colspa">
+        <img class="h-10" src="./img/logo.svg" alt="Workcation Logo" />
+        <img
+          class="object-center mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover lg:hidden"
+          src="img/beach-work.jpg"
+          alt="Woman working at the beach while relaxing"
+        />
+
+        <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl">
+          You can work from anywhere.
+          <br class="hidden lg:block">
+          <span class="text-indigo-500">Take advantage of it.</span>
+        </h1>
+        <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+          Workcation helps you find work-friendly rentals in beautiful locations
+          so you can enjoy some nice weather even when you're not on vacation
+        </p>
+        <div class="mt-4 sm:mt-6">
+          <a
+            href=""
+            class="btn"
+            >Book your escape</a
+          >
+        </div>
+      </div>
+      <div class="relative hidden lg:block">
+        <img
+        class="absolute inset-0 object-cover object-center w-full h-full"
+          src="img/beach-work.jpg"
+          alt="Woman working at the beach while relaxing"
+        />
+      </div>
+    </div>
+    <div class="grid grid-cols-4 gap-4 p-4">
+      <div class="p-4 bg-blue-500 text-brand">Item 1 (spans 2 columns)</div>
+      <div class="p-4 bg-red-500 ">Item 3 (spans 1 column)</div>
+      <div class="p-4 bg-yellow-500">Item 4 (spans all 4 columns)</div>
+      <div class="p-4 bg-green-500 ">Item 2 (spans 1 column)</div>
     </div>
   </body>
 </html>
